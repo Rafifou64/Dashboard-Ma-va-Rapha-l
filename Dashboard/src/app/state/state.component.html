@@ -1,0 +1,13 @@
+<div class="card card-state">
+    <div class="card-title">
+        <ng-container *ngIf="nomState == 'Done'"><i class="fa fa-circle-check"></i></ng-container>
+        <ng-container *ngIf="nomState == 'In progress'"><i class="fa fa-hourglass"></i></ng-container>
+        <ng-container *ngIf="nomState == 'To do'"><i class="fa fa-list rotate180"></i></ng-container>
+        {{ nomState }}
+    </div>
+    <div class="task-list">
+        <ng-container *ngFor="let task of lstTask, let index = index">
+            <app-task [task]="task" [index]="index"></app-task>
+        </ng-container>
+    </div>
+</div>

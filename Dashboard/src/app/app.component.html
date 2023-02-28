@@ -1,0 +1,20 @@
+<div class="task">
+    <div class="container">
+        <div class="button">
+            <input type="text" [(ngModel)]="libelleTask">
+            <button (click)="newTask()">New task</button>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <app-state nomState="To do" [lstTask]="this.gestionTaskService.lstToDo"></app-state>
+            </div>
+            <div class="col-lg-4">
+                <app-state nomState="In progress" [lstTask]="this.gestionTaskService.lstProgress"></app-state>
+            </div>
+            <div class="col-lg-4">
+                <app-state nomState="Done" [lstTask]="this.gestionTaskService.lstDone"></app-state>
+            </div>
+        </div>
+    </div>
+</div>

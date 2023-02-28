@@ -1,0 +1,16 @@
+<div class="card card-task container" [class]=" 'color-state-'+task.idState ">
+    <div class="card-title">
+        <div class="row">
+            <div class="col-lg-2" *ngIf="task.idState == 0"></div>
+            <div class="col-lg-2 cursor" (click)="moveState('avant')" *ngIf="task.idState != 0">
+                <i class="fa fa-arrow-left"></i>
+            </div>
+            <div class="col-lg-8 cursor" (click)="deleteTask(task.idState, index)">
+                <span>{{ task.libelleTask }}</span>
+            </div>
+            <div class="col-lg-2 cursor" (click)="moveState('apres')" *ngIf="task.idState != 2">
+                <i class="fa fa-arrow-right"></i>
+            </div>
+        </div>
+    </div>
+</div>

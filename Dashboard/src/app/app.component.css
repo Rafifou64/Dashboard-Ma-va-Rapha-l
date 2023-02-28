@@ -1,0 +1,16 @@
+.button {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button button {
+    border-radius: 0.375em;
+}
+
+.task {
+    background-color: #0f927f;
+    height: 100vh;
+}

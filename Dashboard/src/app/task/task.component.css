@@ -1,0 +1,36 @@
+.card-task {
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+    padding-top: 5px;
+    border: none;
+}
+
+.color-state-0 {
+    background-color: #1f1fad;
+    color: white;
+    font-weight: 500;
+}
+
+.color-state-1 {
+    background-color: #dd9717;
+    color: white;
+    font-weight: 500;
+    animation: 3s ease-in 1s reverse both paused slidein;
+}
+
+.color-state-2 {
+    background-color: green;
+    color: white;
+    font-weight: 500;
+}
+
+@keyframes slidein {
+    from {
+        transform: scaleX();
+    }
+    to {
+        transform: scaleX(1);
+    }
+}

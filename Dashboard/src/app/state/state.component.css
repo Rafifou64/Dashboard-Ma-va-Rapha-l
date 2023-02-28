@@ -1,0 +1,39 @@
+i.fa.fa-circle-check {
+    color: green;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+i.fa {
+    font-size: 25px;
+    padding-top: 15px;
+    padding-right: 10px;
+}
+
+i.fa.fa-hourglass {
+    color: #dd9717;
+}
+
+i.fa.fa-list {
+    color: #1f1fad;
+}
+
+.card-title {
+    font-size: 25px;
+    FONT-WEIGHT: 500;
+    text-align: center;
+    padding-bottom: 12px;
+    border-bottom: 0.1px solid black;
+}
+
+.card-state {
+    height: 80vh;
+    box-shadow: 0px 10px 30px -1px rgb(108 108 108 / 67%);
+}
+
+.task-list {
+    overflow: auto;
+    overflow-x: hidden;
+}
